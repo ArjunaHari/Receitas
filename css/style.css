@@ -83,7 +83,9 @@ html, body{
 
 main{
 	display: flex;
+	float: left;
 	padding: 10px;
+	justify-content: space-evenly;
 }
 
 .lista img{
