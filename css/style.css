@@ -16,9 +16,7 @@ html, body{
 	gap: 10px;
 
 }
-.header img{
 
-}
 .contato{
 	
 	height: 100%;
@@ -32,7 +30,7 @@ html, body{
 	display: flex;
 	justify-content: space-evenly;
 }
-.topnav a {
+.topnav > a {
 	display: inline-block;
 	width: 25%;
   	color: white;
@@ -43,27 +41,55 @@ html, body{
 .topnav a:hover{
 	background-color: #8dcff5;
 }
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  
+}
+.dropdown > a{
+	display: inline-block;
+	
+  	color: white;
+  	text-align: center;
+  	padding: 14px 16px;
+  	text-decoration: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #72bff2;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown-content a:hover {
+	background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 main{
 	display: flex;
 	padding: 10px;
 }
-aside{
-	width: 40%;
-	
+
+.lista img{
+	border: 2px solid black;
 }
-aside img{
-	height: 100%;
-	width: 100%;
-}
-section{
-	right: 0;
-	text-align: justify;
-	width: 60%;
-	padding: 10px;
-}
-section p{
-	font-size: 20px;
-}
+
 .footer{
 	width: 100%;
 	padding: 20px;
@@ -116,9 +142,4 @@ input[type=submit]:hover{
 textarea{
 	padding: 10px 20px;
 }
-/*#72bff2
-#8dcff5
-#a7dff9
-#c2effc
-#dcffff
-https://paletadecores.com/paleta/72bff2/8dcff5/a7dff9/c2effc/dcffff/*/
+
