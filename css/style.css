@@ -95,12 +95,7 @@ html, body{
 
 /* CORPO DO SITE  */
 
-main{
-	display: flex;
-	float: left;
-	padding: 10px;
-	
-}
+
 
 .lista{
 	
@@ -168,6 +163,84 @@ body{
 		grid-area: 3/ 1/ 3/ -1;
 	}
 	
+}
+/*.grid-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 0px;
+	justify-content: center;
+	padding: 10px;
+}*/
+
+.grid-item {
+	
+}
+
+.grid-container img{
+	width: 300px;
+	height: 200px;
+	border: 3px solid orange;
+
+
+}
+
+.img {
+
+}
+
+.linha1 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	
+}
+.linha1 img {
+	width: 100%;
+	height: 200px;
+	border: 3px solid orange;
+}
+
+/*.linha2 {
+	display: flex;
+	flex-direction: row;
+}
+
+.linha2 {
+
+}*/
+
+/*.main {
+	padding: 20px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	column-gap: 10px;
+	row-gap: 10px;
+	justify-content: center;
+}*/
+
+/*.main img {
+	width: 100%;
+	height: 200px;
+	border: 3px solid orange;
+}*/
+
+section {
+	background-color: #ffba6b;
+}
+
+section p {
+	text-align: justify;
+	font-size: 30px;
+	text-indent: 30px;
+	padding: 0px 20px;
+}
+section h1 {
+	text-align: center;
+}
+section img  {
+	float: left;
+	padding: 10px;
 }
 /* https://paletadecores.com/paleta/b5f4bc/fff19e/ffdc8a/ffba6b/ff6543/ */
 /* https://blog.abreutur.com.br/10-pratos-tipicos-para-provar-em-10-destinos-mundo-afora/ */
