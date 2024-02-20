@@ -11,7 +11,7 @@ html, body{
 
 .header{
 	width: 100%;
-	background-color: #a7dff9;
+	background-color: #ff6543;
 	text-align: center;
 	padding: 20px;	
 	display: flex;
@@ -28,17 +28,20 @@ html, body{
 	align-items: center;
 }
 
+
+
 /* TOPNAV */
 
 .topnav{
-	background-color: #72bff2;
-	display: flex;
-	justify-content: space-evenly;
+	background-color: #ff6543;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	/* justify-content: space-evenly; */
 }
 
 .topnav > a {
 	display: inline-block;
-	width: 25%;
+	width: 100%;
   	color: white;
   	text-align: center;
   	padding: 14px 16px;
@@ -46,7 +49,8 @@ html, body{
 }
 
 .topnav a:hover{
-	background-color: #8dcff5;
+	background-color: #ffdc8a;
+	text-decoration: none;
 }
 
 .dropdown {
@@ -56,7 +60,7 @@ html, body{
 
 .dropdown > a{
 	display: inline-block;
-	
+	width: 100%;
   	color: white;
   	text-align: center;
   	padding: 14px 16px;
@@ -68,8 +72,9 @@ html, body{
   position: absolute;
   background-color: #72bff2;
   min-width: 160px;
+  width: 100%;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 5;
 }
 
 .dropdown-content a {
@@ -94,7 +99,7 @@ main{
 	display: flex;
 	float: left;
 	padding: 10px;
-	justify-content: space-evenly;
+	
 }
 
 .lista{
@@ -118,8 +123,51 @@ body{
 	text-align: justify;
 }
 
+ .container { 
+	border: 4px solid orange;
+	
+	padding: 0px !important;
+ }
+	/*display: flex;
+	justify-content: center;
+	width: 600px;
+	height: 400px;
+	overflow: hidden;
+}
 
+.container-texto {
+	text-align: center;
+} */
 
+.container img{
+	width: 100%;
+	height: 500px;
+	
 
+}
 
+.container p {
+	position: absolute;
+	z-index: 3;
+	left: 45%;
+	top: 85%;
+	color: white;
+	background-color: rgba(0,0,0, 0.50);
+	font-size: 20px;
+	padding: 20px;
+	
+}
 
+@media screen and (max-width: 500px) {
+	.topnav{
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: repeat(3, 1fr);
+		
+	}
+	#sobre {
+		grid-area: 3/ 1/ 3/ -1;
+	}
+	
+}
+/* https://paletadecores.com/paleta/b5f4bc/fff19e/ffdc8a/ffba6b/ff6543/ */
+/* https://blog.abreutur.com.br/10-pratos-tipicos-para-provar-em-10-destinos-mundo-afora/ */
